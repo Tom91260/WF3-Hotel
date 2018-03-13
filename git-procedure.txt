@@ -1,0 +1,25 @@
+1 - Riad
+cd symfony-hotel
+git add -A   //(prépare les fichiers à être commités)
+git commit -m "commit initial du projet"
+git push symfony-hotel master   //On en envoi le projet sur github. En général on a origin à 
+la place de symfony-hotel mais on a eefectué un changement auparavant.
+
+2 - Thomas, Thierry
+cd sympfony-hotel  (si le dossier n'existe pas, cd c:/xampp/htdocs -> mkdir symfony-hotel -> cd symfony-hotel)
+git init 
+git remote add origin + lien du repository sur github
+
+git checkout -b thomas (crée et va sur la branche thomas  /  meme chose avec la branche thierry et riad)
+
+Lorsqu'on a fait des modif sur la branche :
+
+git branch thomas (ou thierry ou riad)
+git add *
+git commit -m "My initial commit message"
+git push -u origin development (pour les commit suivants on pourra mettre seulement git push)
+
+Lorsqu'on veut mettre à jour le master avce les modifications apportées sur la branche
+git checkout master  (on va sur la branche master)
+git merge thomas (ou thierry ou riad)
+git push -u origin master
